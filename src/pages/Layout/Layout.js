@@ -13,7 +13,7 @@ function Layout({ children }) {
           <div className={styles.heading}>
             <h1 className={styles.title}>
               Welcome to the
-              <span className={styles.titleBold}>Intelligent Hub</span>
+              <span className={styles.titleBold}>My project</span>
             </h1>
           </div>
           {children}
@@ -25,6 +25,7 @@ function Layout({ children }) {
                 &copy; {thisYear} MOVE by wmnHealth
                 <sup style={{ position: 'relative', top: '-2px' }}>&#174;</sup>
               </span> */}
+              <h1>this is footer</h1>
             </div>
           </footer>
         </div>

@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       gridTemplateColumns: '1fr 73rem',
     },
-    fontSize: '14px',
+    fontSize: '16px',
   },
   heading: {
     marginBottom: theme.spacing(2),
