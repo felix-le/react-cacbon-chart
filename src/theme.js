@@ -47,7 +47,6 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: ['FilsonProRegular', 'FilsonProBold'].join(','),
-    fontSize: 14,
   },
 });
 

@@ -4,7 +4,6 @@ import { Routes, Route } from 'react-router-dom';
 import Dashboard from './Dashboard';
 import Login from './Login';
 // import NotFound from './NotFound';
-// import Layout from './Layout';
 
 function Router() {
   return (

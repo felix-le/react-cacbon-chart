@@ -1,21 +1,19 @@
 import React from 'react';
-import { makeStyles } from '@mui/styles';
+// import { makeStyles } from '@mui/styles';
+import Button from '@mui/material/Button';
+
 import Layout from '../Layout';
 
-const useStyle = makeStyles((theme) => ({
-  root: {},
-  h1: {
-    color: theme.palette.primary.main,
-    fontSize: '2.5rem',
-  },
-}));
+// const useStyle = makeStyles(() => ({
+//   root: {},
+// }));
 
 function Dashboard() {
-  const classes = useStyle();
-
+  // const classes = useStyle();
   return (
     <Layout>
-      <h1 className={classes.h1}>Dashboard</h1>
+      <h3>Dashboard</h3>
+      <Button variant="contained">Hello World</Button>
     </Layout>
   );
 }

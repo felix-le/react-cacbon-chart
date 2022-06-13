@@ -90,6 +90,15 @@ $greys: (
   1000: $black,
 );
 
+//==== Font size =====//
+$body-font-size: 14px;
+$h1: 5rem;
+$h2: 3.8rem;
+$h3: 2.8rem;
+$h4: 2.6rem;
+$h5: 2.4rem;
+$h6: 2.2rem;
+
 @mixin xs-mobile-spacing {
   padding: $spacing-lg $spacing-sm;
 }

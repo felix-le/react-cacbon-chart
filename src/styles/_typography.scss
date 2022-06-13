@@ -1,0 +1,130 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.4074;
+}
+h1,
+.h1 {
+  font-size: $h1;
+}
+h2,
+.h2 {
+  font-size: $h2;
+}
+h3,
+.h3 {
+  font-size: $h3;
+}
+h4,
+.h4 {
+  font-size: $h4;
+}
+h5,
+.h5 {
+  font-size: $h5;
+}
+h6,
+.h6 {
+  font-size: $h6;
+}
+
+@media #{md-and-up} {
+  h1,
+  .h1 {
+    font-size: $h1 - 6;
+  }
+
+  h2,
+  .h2 {
+    font-size: $h2 - 4;
+  }
+  h3,
+  .h3 {
+    font-size: $h3 - 4;
+  }
+}
+
+@media #{lg-and-up} {
+  h1,
+  .h1 {
+    font-size: $h1 - 12;
+  }
+
+  h2,
+  .h2 {
+    font-size: $h2 - 10;
+  }
+  h3,
+  .h3 {
+    font-size: $h3 - 10;
+  }
+}
+
+@media #{xl-and-up} {
+  h1,
+  .h1 {
+    font-size: $h1 - 8;
+  }
+  h4 {
+    font-size: 20px !important;
+  }
+}
+
+@media #{sm-and-down} {
+  h1,
+  .h1 {
+    font-size: $h1 - 8;
+  }
+  h4 {
+    font-size: 20px !important;
+  }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-weight: 700;
+}
+h4,
+.h4,
+h5,
+.h5 {
+  font-weight: 600;
+}
+h6,
+.h6 {
+  font-weight: 500;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+a:visited {
+  color: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  font-size: 14px;
+}
+input,
+select {
+  height: 40px;
+  padding: 0 15px;
+}
