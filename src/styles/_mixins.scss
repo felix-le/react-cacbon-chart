@@ -1,0 +1,24 @@
+@import '../styles/variables';
+
+@mixin dyn5-cover-image($img) {
+  background-position: center;
+}
+
+@mixin square-container($length: 30px, $lg-length: 40px) {
+  width: $length;
+  height: $length;
+  @include md-and-up {
+    width: $lg-length;
+    height: $lg-length;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    transition: 0.25s;
+    &:hover {
+      cursor: pointer;
+      @content;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+$purple: #4a2260;
+$light-grape: #6a387e;
+$dusky-purple: #7c578f;
+$deep-grape: #321641;
+$light-stone: #d8d8d8;
+$wild_sand: #f5f5f5;
+$dyn5-red: #f52934;
+
+$main-purple: hsla(278.7, 47.7%, 25.5%, 1);
+$main-red: hsla(356.8, 91.1%, 56.1%, 1);
+$black: hsla(0, 0%, 0%, 1);
+
+$white-sand: #f5f5f5;
+$white-almost-opaque: rgba(255, 255, 255, 0.9);
+$white-less-opaque: rgba(255, 255, 255, 0.8);
+$slate-grey: #4a4a4a;
+$pitch-grey: #333333;
+$cherry: rgba(#852853, 0.86);
+
+$spacing-lg: 60px;
+$spacing-md: 30px;
+$spacing-sm: 20px;
+$spacing-xs: 15px;
+$spacing-xxs: 5px;
+$spacing-lg: 60px;
+$small-space: 8px;
+$medium-buffer: 40px;
+$basic-p-width: 400px;
+$narrow-content-width: 350px;
+$side-space: 80px;
+$largish-space: 112px;
+$large-space: 144px;
+$navbar-height: 70px;
+
+$content-max-width: 1400px;
+$menu-max-width: 300px;
+$shadows: (
+  base: 0px 2px 40px 0px rgba(0, 0, 0, 0.17),
+  messageBubbles: 0 2px 4px 0 rgba(0, 0, 0, 0.08),
+  buttons: 0 1px 2px 0 rgba(0, 0, 0, 0.2),
+);
+
+$purples: (
+  000: lighten($main-purple, 73%),
+  100: lighten($main-purple, 45%),
+  200: lighten($main-purple, 35%),
+  300: lighten($main-purple, 10%),
+  400: lighten($main-purple, 5%),
+  500: $main-purple,
+  600: darken($main-purple, 4%),
+  700: darken($main-purple, 9%),
+  800: darken($main-purple, 15%),
+);
+
+$reds: (
+  100: lighten($main-red, 20%),
+  200: lighten($main-red, 20%),
+  300: lighten($main-red, 20%),
+  400: lighten($main-red, 10%),
+  500: $main-red,
+  600: darken($main-red, 10%),
+  700: darken($main-red, 20%),
+);
+
+$z-index: (
+  notification-toast: 1000,
+  video-modal: 900,
+  overlay-header: 800,
+  movable-overlay-open: 700,
+  header: 600,
+  movable: 500,
+  overlay-bg: 400,
+  mobile-menu: 300,
+  carousel-arrows: 100,
+  above-fold-content: 200,
+  above-fold-laptop: 100,
+);
+
+$greys: (
+  000: lighten($black, 98%),
+  100: lighten($black, 93%),
+  200: lighten($black, 78%),
+  300: lighten($black, 68%),
+  400: lighten($black, 78%),
+  500: lighten($black, 48%),
+  600: lighten($black, 38%),
+  700: lighten($black, 28%),
+  800: lighten($black, 18%),
+  900: lighten($black, 18%),
+  1000: $black,
+);
+
+@mixin xs-mobile-spacing {
+  padding: $spacing-lg $spacing-sm;
+}
+
+@mixin mobile-spacing {
+  padding: 90px 40px;
+}
+
+@mixin standard-sect-spacing {
+  padding: 150px 100px;
+  padding-left: 60px;
+}
+
+@function get-purple($shade) {
+  @return map-get($purples, $shade);
+}
+
+@function get-red($shade) {
+  @return map-get($reds, $shade);
+}
+
+@function get-grey($shade) {
+  @return map-get($greys, $shade);
+}
+
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}

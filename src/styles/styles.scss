@@ -1,0 +1,52 @@
+@import 'reset';
+@import 'fonts';
+@import 'breakpoints';
+@import 'variables';
+@import 'placeholders';
+@import 'mixins';
+
+:root {
+  --scrollbarColor: #bdbdbd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5rem var(--scrollbarColor);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbarColor);
+}
+
+html,
+#root {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'FilsonProRegular';
+  color: $pitch-grey;
+  height: 100%;
+}
+
+#background {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  transition-timing-function: ease-out;
+  transition-duration: 1s;
+}

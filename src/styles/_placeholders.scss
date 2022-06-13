@@ -1,0 +1,45 @@
+%regular-text {
+  font-family: 'FilsonProRegular';
+  line-height: 1.3rem;
+}
+
+%small-text {
+  @extend %regular-text;
+  font-size: 0.85rem;
+  line-height: 1.15rem;
+}
+
+%bold-text {
+  font-family: 'FilsonProBold';
+}
+
+%button {
+  border: 1px solid;
+  border-color: $purple;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-family: 'FilsonProRegular';
+  padding: 0.5rem 0.75rem;
+  line-height: 1.25;
+  transition: all 0.15s ease-in-out;
+  outline: 0;
+}
+
+%purple-background-white-text {
+  background-color: $purple;
+  color: #fff;
+}
+
+%white-background-purple-text {
+  background-color: #fff;
+  color: $purple;
+}
+
+%menu-button {
+  border: none;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 24px;
+  transition: 0.25s;
+}
