@@ -1,20 +1,15 @@
 import React from 'react';
-// import { makeStyles } from '@mui/styles';
-import Button from '@mui/material/Button';
-
-import Layout from '../Layout';
-
-// const useStyle = makeStyles(() => ({
-//   root: {},
-// }));
+import Navbar from 'components/Navbar';
 
 function Dashboard() {
   // const classes = useStyle();
   return (
-    <Layout>
-      <h3>Dashboard</h3>
-      <Button variant="contained">Hello World</Button>
-    </Layout>
+    <>
+      <Navbar />
+      <main>
+        <h1>Dashboard</h1>
+      </main>
+    </>
   );
 }
 
